@@ -7,10 +7,17 @@
     --font-futura: 'Futura PT', 'Futura Std', 'Futura', 'Century Gothic', sans-serif;
     --background: 0 0% 100%;
     --foreground: 222 25% 15%;
+    color-scheme: light;
+  }
+
+  :root[data-theme='dark'] {
+    --background: 222 25% 10%;
+    --foreground: 210 20% 96%;
+    color-scheme: dark;
   }
 
   html {
-    @apply font-sans;
+    @apply bg-background font-sans text-foreground;
   }
 
   body {
@@ -28,5 +35,17 @@
   kbd,
   samp {
     font-family: inherit;
+  }
+
+  input,
+  textarea,
+  select,
+  optgroup {
+    @apply border-foreground/30 bg-background text-foreground;
+  }
+
+  input::placeholder,
+  textarea::placeholder {
+    @apply text-foreground/60;
   }
 }
