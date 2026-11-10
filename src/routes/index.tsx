@@ -67,7 +67,7 @@ function Home() {
   }
 
   return (
-    <main className="min-h-screen bg-background px-4 pb-12 pt-28 text-foreground sm:px-8 sm:pt-32">
+    <main id="imoveis" className="min-h-screen bg-background px-4 pb-12 pt-10 text-foreground sm:px-8 sm:pt-12">
       <div className="mx-auto max-w-7xl">
         <header className="mb-8 max-w-3xl">
           <p className="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-foreground/60">Casas e terrenos</p>
